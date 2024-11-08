@@ -58,7 +58,7 @@ pipeline {
             steps {
              script {
                    withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                    sh 'docker run -itd --name spring-cont -p 8087:8081 java-spring'
+                    sh 'docker run -itd --name spring-cont1 -p 8088:8081 java-spring'
                   }
               }
             }
